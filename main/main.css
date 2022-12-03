@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&family=Roboto:wght@500&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ff0000;
+}
+
+.loader{
+    perspective: 700px;
+}
+
+.letter{
+    font-size: 130px;
+    font-family: 'Roboto' sans-serif;
+    display: inline-block;
+    font-weight: 500;
+    animation: flip 2.5s infinite linear;    
+    transform-origin: 0 70%;
+    transform-style: preserve-3d;
+}
+
+@keyframes flip {
+    35%{
+        transform: rotateX(360deg);
+    }
+
+    100%{
+        transform: rotateX(360deg);
+    }
+}
+
+.letter:nth-child(even) {
+    color: #ffffff;
+}
+
+.letter:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.letter:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.letter:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+.letter:nth-child(5) {
+    animation-delay: 1.2s;
+}
+
+.letter:nth-child(6) {
+    animation-delay: 1.5s;
+}
+
+.letter:nth-child(7) {
+    animation-delay: 1.8s;
+}
+
+.letter:nth-child(8) {
+    animation-delay: 2.1s;
+}
